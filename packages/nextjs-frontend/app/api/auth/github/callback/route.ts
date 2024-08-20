@@ -34,6 +34,7 @@ export async function GET(request: NextRequest) {
 			const cookieStore = cookies();
 			cookieStore.set("auth_token", access_token, {
 				path: "/",
+				sameSite: "lax", // https://web.dev/articles/samesite-cookie-recipes
 				maxAge: 60 * 60 * 24 * 30,
 				httpOnly: true, // This is important to prevent users modifying the cookie from the browser
 				secure: process.env.NODE_ENV === "production", // This is important to prevent the cookie from being sent over an insecure connection, but in local you usually don't have https so disable it unless it is production

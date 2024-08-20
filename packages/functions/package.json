@@ -1,0 +1,11 @@
+{
+	"name": "@nextjs-sst-ion-auth/functions",
+	"version": "0.0.0",
+	"dependencies": {
+		"@octokit/core": "6.1.2",
+		"sst": "*"
+	},
+	"devDependencies": {
+		"@types/aws-lambda": "^8.10.137"
+	}
+}

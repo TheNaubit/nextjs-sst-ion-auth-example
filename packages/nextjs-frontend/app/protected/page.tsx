@@ -27,6 +27,7 @@ export default async function ProtectedPage() {
 				</p>
 				<Button variant="destructive" asChild className="mt-6">
 					<Link
+						prefetch={false}
 						href={makeURL(host, "/api/auth/logout")}
 						className="rounded border-pr"
 					>

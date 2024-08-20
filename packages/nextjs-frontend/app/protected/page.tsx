@@ -1,7 +1,6 @@
 import { makeURL } from "@nauverse/make-url";
-import Link from "next/link";
 import { redirect } from "next/navigation";
-import { Button } from "../../components/ui/button";
+import { LogoutButton } from "../../components/LogoutButton";
 import { getHost } from "../../lib/headers.server";
 import { validateSession } from "../../lib/session.server";
 
@@ -25,15 +24,7 @@ export default async function ProtectedPage() {
 				<p className="leading-7 [&:not(:first-child)]:mt-6">
 					Welcome <b>{sessionData.user.email}</b>!
 				</p>
-				<Button variant="destructive" asChild className="mt-6">
-					<Link
-						prefetch={false}
-						href={makeURL(host, "/api/auth/logout")}
-						className="rounded border-pr"
-					>
-						Log out
-					</Link>
-				</Button>
+				<LogoutButton className="mt-6" />
 			</section>
 		</main>
 	);

@@ -34,7 +34,9 @@ export default async function LoginPage() {
 			</h1>
 			<section className="flex flex-row items-center justify-center gap-4">
 				<Button asChild>
-					<Link href={githubSignInURL}>Continue with GitHub</Link>
+					<Link prefetch={false} href={githubSignInURL}>
+						Continue with GitHub
+					</Link>
 				</Button>
 			</section>
 		</main>

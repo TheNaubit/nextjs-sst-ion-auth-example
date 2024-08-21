@@ -33,3 +33,4 @@ To create this example, I used several resources you might find interesting:
 - The old SST v2 Auth docs: https://docs.sst.dev/auth
 - This Gist in Svelte from Matt Kinnersley: https://gist.github.com/mattkinnersley/9aa751dc7ea115cdebbe2bf44a068ec7
 - The readme and source code from the `future/auth` package from SST: https://github.com/sst/sst/tree/master/packages/sst/src/node/future/auth
+- This implementation in React (with Vite, client side): https://gist.github.com/amosbastian/e37fa8aefe1aef7d866da261bf20dfdf
